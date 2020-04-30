@@ -38,6 +38,7 @@ public class RandomPersonCreationAppl {
 		ConfigurableApplicationContext ctx =
 				SpringApplication.run(RandomPersonCreationAppl.class, args);
 		PersonsRepository repo = ctx.getBean(PersonsRepository.class);
+		String str = "Hello";
 		repo.saveAll(persons);
 	}
 
